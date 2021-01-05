@@ -1,0 +1,160 @@
+.delivery-payment {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    padding-bottom: 60px;
+}
+
+.point-of-delivery {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.point-of-delivery p {
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.point-info {
+    display: flex;
+    align-items: center;
+}
+
+.point-info p {
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.point-info .info {
+    position: relative;
+    cursor: help;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #f70661;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.point-info .info::before {
+    content: '\f129';
+    font-family: 'fontAwesome';
+    color: #f70661;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.info-description {
+    display: none;
+    width: 360px;
+    height: 155px;
+    background: url(../img/rectangle.png) no-repeat center;
+}
+
+.info-description p {
+    padding: 25px;
+    text-align: left;
+    color: #f7005d;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.point-info .info:hover .info-description {
+    position: absolute;
+    display: block;
+    top: -170px;   
+    left: -55px;
+}
+
+.point-of-delivery .time {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.point-of-delivery .pickup {
+    padding-top: 55px;
+}
+
+.point-of-delivery .pickup span {
+    font-weight: 700;
+}
+
+.delivery-courier {
+    padding: 40px 15px 50px;
+}
+
+.delivery-courier p {
+    padding-top: 50px;
+}
+
+.delivery-courier h3,
+.payment h3 {
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+
+.delivery-cost,
+.cash,
+.non-cash {
+    padding-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.delivery-courier .delivery-cost {
+    padding-top: 10px;
+}
+
+.product-delivery {
+    padding-top: 45px;
+    display: flex;
+}
+
+.product-delivery .product {
+    width: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.product-delivery p {
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 0;
+}
+
+.p-delivery p:last-child {
+    padding-bottom: 0;
+}
+
+.payment {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.payment p {
+    padding-top: 10px;
+}
+
+.payment .non-cash {
+    padding-top: 25px;
+}
+
+.non-cash-pay p:first-child {
+    padding-bottom: 15px;
+}
+
+.non-cash-pay p {
+    padding-top: 0;
+}
+
+.non-cash-pay p span {
+    font-weight: 600;
+}

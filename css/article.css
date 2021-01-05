@@ -1,0 +1,53 @@
+section .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 15px 60px;
+}
+
+.article {
+    width: 750px;
+}
+
+.article-img {
+    padding-left: 15px;
+}
+
+.article-img img {
+    width: 100%;
+}
+
+.article-title h2 {
+    padding-left: 15px;
+    padding-top: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.article-date {
+    margin: 10px 0px 5px 15px;
+    background: url(../img/date.png) no-repeat center left;
+}
+
+.article-date p {
+    padding-left: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #b3c3ce;
+}
+
+.article-description {
+    padding-left: 15px;
+}
+
+.article-description p {
+    padding-top: 25px;
+}
+
+.article-description p span {
+    color: #8fc232;
+    font-weight: 600;
+}
+
+.side-menu {
+    margin-top: 0;
+}

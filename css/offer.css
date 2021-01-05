@@ -1,0 +1,22 @@
+.offer {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.offer .section-title h2 {
+    padding-bottom: 35px;
+}
+
+.offer .section-intro {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.offer .section-intro p {
+    padding-top: 25px;
+    color: #303132;
+}
+
+.offer .section-intro-bottom {
+    padding-top: 35px;
+}

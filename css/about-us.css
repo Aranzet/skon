@@ -1,0 +1,119 @@
+.section-title h2 {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.section-title h2 span {
+    color: #90c035;
+}
+
+.about-us {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+    background-color: #edf1f4;
+}
+
+.about-us-item {
+    display: flex;
+    align-items: center;
+}
+
+.aui-text {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 470px;
+}
+
+.aui-text p {
+    padding-top: 15px;
+}
+
+.aui-text p:first-child {
+    padding-top: 0;
+}
+
+.aui-img {
+    height: 380px;
+}
+
+.about-us .about-us-item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.quote p {
+    padding-left: 15px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.quote p span {
+    color: #90c333;
+}
+
+form {
+    padding: 60px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 0.1px #babebe;
+}
+
+.form-title {
+    text-transform: uppercase;
+    line-height: 42px;
+}
+
+.form-about-comment {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+.form-contact {
+    width: 30%;
+}
+
+.form-contact input,
+.form-about-comment textarea {
+    width: 85%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+}
+
+.form-contact input::placeholder,
+.form-about-comment textarea::placeholder {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000;
+}
+
+.form-about-comment textarea {
+    width: 64%;
+}
+
+.btn-send {
+    display: flex;
+    justify-content: flex-end;
+}
+
+form button {
+    cursor: pointer;
+    padding: 15px 40px;
+    background-color: #dc1c4f;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+form button:hover {
+    background-color: #8fc232;
+}

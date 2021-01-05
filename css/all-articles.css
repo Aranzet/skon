@@ -1,0 +1,56 @@
+.all-articles .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 15px 55px 15px;
+}
+
+.section-title h2 {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.articles-list {
+    width: 750px;
+}
+
+.article-item {
+    display: flex;
+    padding-top: 50px;
+}
+
+.articles-img {
+    width: 240px;
+    height: 240px;
+}
+
+.articles-description {
+    padding-left: 50px;
+    color: #303132;
+}
+
+.articles-title h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.articles-intro p {
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+.articles-date {
+    margin-top: 15px;
+    background: url(../img/date.png) no-repeat center left;
+    padding-left: 25px;
+}
+
+.articles-date p {
+    color: #b3c3ce;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.articles-page {
+    padding-top: 40px;
+}

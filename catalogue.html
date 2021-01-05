@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Арки двери, фрамуги СКОН</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-adaptivity.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.png">
+</head>
+<body>
+    <!-- Меню, контакты, товары -->
+    <header>
+        <div class="container">
+            <!-- Меню и корзина -->
+            <div class="nav-basket">
+                <!-- Меню -->
+                    <div class="adaptive-menu">
+                        <div class="menu-toggle"></div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Как сделать заказ</a></li>
+                                <li class="active"><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Вопрос-ответ</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Оферта</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Полезные статьи</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                <!-- Корзина -->
+                <div class="basket adaptive-basket">
+                    <a href="">Корзина</a>
+                </div>
+            </div>
+        </div>
+        <!-- Контакты -->
+        <div class="contacts">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Логотип">
+                </div>
+                <div class="communication">
+                    <div class="inst">
+                        <a href="#">
+                            <p>@scondveri</p>
+                        </a>
+                    </div>
+                    <div class="address">
+                        <p>г. Москва, Контимировская <br>
+                        д. 29 - 2 этаж.
+                        </p>
+                    </div>
+                    <div class="whatsapp">
+                        <a href="#">
+                            <p>+7 (903) 277 96 65 <br>
+                            +7 (495) 720 77 48
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="btn-contacts">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="goods-list">
+                <div class="goods-item">
+                    <div class="goods-img">
+                        <img src="img/interior-doors.png" alt="Межкомнатные двери">
+                    </div>
+                    <div class="goods-name">
+                        <a href="#"><p>Межкомнатные двери</p></a>
+                    </div>
+                </div>
+                <div class="goods-item goods-item-active">
+                    <div class="goods-img">
+                        <img src="img/front-door.png" alt="Входные двери">
+                    </div>
+                    <div class="goods-name">
+                        <a><p>Входные двери</p></a>
+                    </div>
+                </div>
+                <div class="goods-item">
+                    <div class="goods-img">
+                        <img src="img/arches.png" alt="Арки">
+                    </div>
+                    <div class="goods-name">
+                        <a href="#"><p>Арки</p></a>
+                    </div>
+                </div>
+                <div class="goods-item">
+                    <div class="goods-img">
+                        <img src="img/wall-panels.png" alt="Стеновые панели и перегородки">
+                    </div>
+                    <div class="goods-name">
+                        <a href="#"><p>Стеновые панели и перегородки</p></a> 
+                    </div>
+                </div>
+                <div class="goods-item">
+                    <div class="goods-img">
+                        <img src="img/furniture.png" alt="Фурнитура">
+                    </div>
+                    <div class="goods-name">
+                        <a href="#"><p>Фурнитура</p></a>
+                    </div>
+                </div>
+                <div class="goods-item">
+                    <div class="goods-img">
+                        <img src="img/our-work.png" alt="Наши работы">
+                    </div>
+                    <div class="goods-name">
+                        <a href="#"><p>Наши работы</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="filter">
+        <div class="container">
+            <div class="filter-price">
+                <div class="filter-title">
+                    <h4>Цена</h4>
+                    <select name="currency" id="currency">
+                        <option value="ruble">Руб</option>
+                        <option value="dollar">Дол</option>
+                    </select>
+                </div>
+                <div class="filter-range">
+                    <input type="text" class="polzunok-input-left" />
+                    <input type="text" class="polzunok-input-right "/>
+                    <div class="polzunok"></div>
+                </div>
+            </div>
+            <div class="filter-hr"></div>
+            <div class="filter-material">
+                <div class="filter-title">
+                    <h4>Материал</h4>
+                </div>
+                <form action="#">
+                    <p>
+                        <input type="checkbox" id="glass" />
+                        <label for="glass">Стекло</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="plastic" />
+                        <label for="plastic">Пластик</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="wood" />
+                        <label for="wood">Дерево</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="metal" />
+                        <label for="metal">Металл</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="all" />
+                        <label for="all">Все</label>
+                    </p>
+                </form>
+            </div>
+            <div class="filter-hr fhr"></div>
+            <div class="filter-type">
+                <div class="filter-title">
+                    <h4>Показать</h4>
+                </div>
+                <div class="show-type-btn">
+                    <a class="show-btn active-show-btn" href="#">
+                        <p>Все товары</p>
+                    </a>
+                    <a class="show-btn" href="#">
+                        <p>Хиты</p>
+                    </a>
+                    <a class="show-btn" href="#">
+                        <p>Новинки</p>
+                    </a>
+                    <a class="show-btn" href="#">
+                        <p>Акции</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalogue">
+        <div class="container">
+            <div class="section-title">
+                <h2>Межкомнатные двери-подкатегория</h2>
+            </div>
+            <div class="catalogue-description">
+                <p>СЕО текст нужен для дальнейшего продвижения сайта.СЕО текст нужен для дальнейшего продвижения сайта.СЕО текст нужен для дальнейшего продвижения сайта.СЕО текст нужен для дальнейшего продвижения сайта.СЕО текст нужен для дальнейшего продвижения сайта.СЕО текст нужен для дальнейшего продвижения сайта.СЕО текст нужен для дальнейшего продвижения сайта.СЕО текст нужен для дальнейшего продвижения сайта.СЕО текст нужен для дальнейшего продвижения сайта.СЕО текст нужен для дальнейшего продвижения сайта.СЕО текст нужен для дальнейшего продвижения сайта.</p>
+            </div>
+            <div class="catalogue-list">
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img1.jpg" alt="Фото товара">
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>2U</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Серия U представлена широким ассортиментом царговых...</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>5,355 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img2.jpg" alt="Фото товара">
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>Империя ПГ</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Конструкция: Каркас дверного полотна — массив бессучковой сосны.</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>24,500 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img3.jpg" alt="Фото товара">
+                            <div class="catalogue-label">
+                                <p>new</p>
+                            </div>
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>Сенатор</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Конструкция: Каркас дверного полотна — массив бессучковой сосны.</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>33,000 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img1.jpg" alt="Фото товара">
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>2U</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Серия U представлена широким ассортиментом царговых...</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>5,355 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img2.jpg" alt="Фото товара">
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>Империя ПГ</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Конструкция: Каркас дверного полотна — массив бессучковой сосны.</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>24,500 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img3.jpg" alt="Фото товара">
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>Сенатор</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Конструкция: Каркас дверного полотна — массив бессучковой сосны.</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>33,000 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img1.jpg" alt="Фото товара">
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>2U</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Серия U представлена широким ассортиментом царговых...</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>5,355 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img2.jpg" alt="Фото товара">
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>Империя ПГ</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Конструкция: Каркас дверного полотна — массив бессучковой сосны.</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>24,500 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img3.jpg" alt="Фото товара">
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>Сенатор</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Конструкция: Каркас дверного полотна — массив бессучковой сосны.</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>33,000 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img1.jpg" alt="Фото товара">
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>2U</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Серия U представлена широким ассортиментом царговых...</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>5,355 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img2.jpg" alt="Фото товара">
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>Империя ПГ</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Конструкция: Каркас дверного полотна — массив бессучковой сосны.</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>24,500 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue-item">
+                    <div class="catalogue-card">
+                        <div class="catalogue-img">
+                            <img src="img/sh-img3.jpg" alt="Фото товара">
+                        </div>
+                        <div class="catalogue-text">
+                            <div class="catalogue-name">
+                                <h4>Сенатор</h4>
+                            </div>
+                            <div class="catalogue-item-description">
+                                <p>Конструкция: Каркас дверного полотна — массив бессучковой сосны.</p>
+                            </div>
+                            <div class="catalogue-price">
+                                <p>33,000 <span>Руб.</span></p>
+                            </div>
+                            <a href="#" class="btn-buy">Купить</a>
+                        </div>
+                    </div>
+                    <div class="catalogue-hover">
+                        <div class="catalogue-presence">
+                            <p>Есть на складе</p>
+                        </div>
+                        <div class="catalogue-compare">
+                            <a href="#">Сравнить</a>
+                        </div>
+                        <div class="catalogue-tab">
+                            <a href="#">В закладки</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-page">
+                <a href="#" class="prev-page"></a>
+                <a href="#" class="number-page">
+                    <p>1</p>
+                </a>
+                <a href="#" class="number-page">
+                    <p>2</p>
+                </a>
+                <a href="#" class="number-page active-number-page">
+                    <p>3</p>
+                </a>
+                <a href="#" class="number-page">
+                    <p>4</p>
+                </a>
+                <a href="#" class="number-page">
+                    <p>5</p>
+                </a>
+                <a href="#" class="next-page"></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- Контакты -->
+        <div class="container">
+            <div class="contacts">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Логотип">
+                </div>
+                <div class="communication">
+                    <div class="inst">
+                        <p>@scondveri</p>
+                    </div>
+                    <div class="address">
+                        <p>г. Москва, Контимировская <br>
+                            д. 29 - 2 этаж.</p>
+                    </div>
+                    <div class="whatsapp">
+                        <p>+7 (903) 277 96 65 <br>
+                            +7 (495) 720 77 48</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav-copyright">
+                <div class="footer-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Вопрос-ответ</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Как сделать заказ</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Полезные статьи</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Оферта</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="copyright">
+                    <p>Разработано в <a href="http://in-rate.ru" target="_blank">in-rate.ru</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/range.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+</html>

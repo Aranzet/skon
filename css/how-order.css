@@ -1,0 +1,152 @@
+.section-title h2 {
+    padding-top: 75px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-title h2 span {
+    color: #8ec131;
+}
+
+.how-order-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.how-order-item {
+    padding-top: 70px;
+    width: 310px;
+}
+
+.hoi-img {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 1px #e4e8ec;
+}
+
+.how-order-item .hoi-img img {
+    width: 100%;
+}
+
+.hoi-number {
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #8fc031;
+    text-align: center;
+}
+
+.hoi-img .hoi-cursor1 img,
+.hoi-img .hoi-cursor2 img,
+.hoi-img .hoi-cursor3 img,
+.hoi-img .hoi-cursor4 img,
+.hoi-img .hoi-cursor5 img,
+.hoi-img .hoi-cursor6 img {
+    position: absolute;
+    width: auto;
+}
+
+.hoi-img .hoi-cursor1 img {
+    bottom: 0;
+    right: 40px;
+}
+
+.hoi-img .hoi-cursor2 img {
+    bottom: 80px;
+    right: 10px;
+}
+
+.hoi-img .hoi-cursor3 img {
+    bottom: 5px;
+    right: -5px;
+}
+
+.hoi-img .hoi-cursor4 img {
+    top: 20px;
+    right: -30px;
+}
+
+.hoi-img .hoi-cursor5 img {
+    bottom: 25px;
+    right: 25px;
+}
+
+.hoi-img .hoi-cursor6 img {
+    bottom: -25px;
+    left: 130px;
+}
+
+.hoi-number p {
+    font-weight: 700;
+    color: #fff;
+    line-height: 30px;
+}
+
+.hoi-desc {
+    padding-top: 40px;
+}
+
+.hoi-desc a {
+    color: #648f11;
+}
+
+.hoi-desc p span {
+    color: #648f11;
+}
+
+.how-order-outro {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.how-order-outro p span {
+    font-weight: 700;
+}
+
+.how-order-visit,
+.how-order-fax,
+.how-order-phone {
+    text-align: center;
+}
+
+.how-order-visit p {
+    padding-top: 15px;
+}
+
+.how-order-fax p span,
+.how-order-visit p span {
+    font-weight: 700;
+}
+
+.how-order-fax {
+    padding-top: 40px;
+}
+
+.how-order-fax br {
+    display: none;
+}
+
+.how-order-email {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.how-order-email p {
+    padding-right: 10px;
+}
+
+.how-order-email a {
+    color: #8ec131;
+}
+
+.how-order-phone {
+    padding-top: 35px;
+    padding-bottom: 140px;
+}

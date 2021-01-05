@@ -1,0 +1,57 @@
+.loft {
+    padding-top: 190px;
+    padding-bottom: 30px;
+    background: url(../img/bg-loft.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.loft .section-title h2 {
+    padding-top: 20px;
+    padding-left: 0;
+    color: #fff;
+    line-height: 45px;
+}
+
+.loft-article {
+    padding-left: 15px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loft-article .loft-img {
+    padding-right: 40px;
+}
+
+.loft-desc {
+    width: 555px;
+}
+
+.loft-article:first-child .loft-intro {
+    padding-top: 40px;
+}
+
+.loft-intro {
+    color: #fff;
+}
+
+.loft .loft-article:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.loft .loft-article:nth-child(2n) .loft-desc {
+    width: 515px;
+}
+
+.loft .loft-article:nth-child(2n) .loft-img {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.loft .loft-article:nth-child(2n) p:first-child {
+    padding-top: 5px;
+}
+
+.loft .loft-article:nth-child(2n) p:last-child {
+    padding-top: 50px;
+}

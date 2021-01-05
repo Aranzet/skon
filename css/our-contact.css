@@ -1,0 +1,83 @@
+section {
+    overflow: hidden;
+}
+
+section .container {
+    position: relative;
+    display: flex;
+    padding-left: 15px;
+}
+
+.section-title {
+    padding-top: 60px;
+}
+
+.section-title h2 {
+    padding-left: 0;
+}
+
+.our-contact {
+    width: 630px;
+    padding-bottom: 75px;
+}
+
+.our-contact-phone {
+    padding-top: 10px;
+}
+
+.our-contact-phone p,
+.our-contact-address p,
+.our-contact-work p,
+.our-contact-alert p,
+.our-contact-time-work p,
+.our-contact-email p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.our-contact-phone p span,
+.our-contact-address p span {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.our-contact-address,
+.our-contact-work,
+.our-contact-alert,
+.our-contact-time-work {
+    padding-top: 25px;
+}
+
+.our-contact-work p span,
+.our-contact-time-work p span {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.our-contact-alert p {
+    font-weight: 400;
+    color: #8dc232;
+}
+
+.our-contact-time-work p {
+    font-weight: 600;
+}
+
+.our-contact-email {
+    padding-top: 70px;
+}
+
+.our-contact-email p {
+    font-weight: 600;
+}
+
+.our-contact-email a {
+    color: #8dc232;
+    font-weight: 700;
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 645px;
+}
